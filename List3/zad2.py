@@ -1,7 +1,6 @@
 import typing
 
 
-
 def perfect_functional(n: int) -> typing.List[int]:
     return list(
         filter(
@@ -14,6 +13,6 @@ def perfect_comprehension(n: int) -> typing.List[int]:
 
 
 def perfect_iterator(n: int):
-    for num in range(1, n+1):
-        if sum(elem for elem in range(1, num // 2 + 1) if num % elem == 0)==num:
+    for num in range(1, n + 1):
+        if sum(elem for elem in range(1, num // 2 + 1) if num % elem == 0) == num:
             yield num
